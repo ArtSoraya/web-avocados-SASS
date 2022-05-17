@@ -1,0 +1,602 @@
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+strong {
+  font-weight: bold;
+  color: #999999; }
+
+nav {
+  width: 100%;
+  height: 6%;
+  font-size: 20px;
+  position: absolute;
+  z-index: 100;
+  background-color: white; }
+  nav .enlaces {
+    padding-right: 5%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end; }
+    nav .enlaces a {
+      color: black;
+      min-width: 3%;
+      height: 1%;
+      margin: 2%;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-weight: bold; }
+      nav .enlaces a:hover {
+        color: #999999;
+        transition: color 0.3s ease; }
+
+@media screen and (max-width: 500px) {
+  strong {
+    font-size: 15px;
+    font-weight: bold; }
+  nav {
+    font-size: 10px;
+    font-weight: bold;
+    padding-right: 20px;
+    margin-bottom: 20%; }
+    nav a {
+      margin: 7%;
+      color: black;
+      min-width: 10px;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center; }
+      nav a:hover {
+        transition: color 0.3s ease;
+        color: #999999; } }
+
+.inicio {
+  z-index: 10;
+  width: 60%;
+  margin-top: 14%;
+  position: absolute; }
+  .inicio .titulo {
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    font-size: 150px;
+    text-align: center;
+    font-family: 'Beau Rivage', cursive;
+    z-index: 100; }
+  .inicio p {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    color: #999999;
+    animation-name: presentacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    padding-right: 30%;
+    padding-left: 30%;
+    font-weight: bold; }
+  .inicio .boton {
+    margin-left: auto;
+    margin-right: auto;
+    height: 2%;
+    width: 100%;
+    padding: 3% 3% 3% 3%;
+    text-align: center;
+    border-radius: 5px; }
+    .inicio .boton a {
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+      background-color: white;
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      padding: 5px 10px 5px 10px;
+      color: black;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 7px;
+      transition: all 0.4s ease; }
+      .inicio .boton a:hover {
+        background-color: black;
+        color: white; }
+
+.backgroundInicio {
+  background-image: url(imagenes/portadadefinitiva.png);
+  background-size: cover;
+  background-attachment: fixed; }
+
+/*
+.circulo1 {
+	animation-name: circulo1;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	margin-top: 20%;
+	margin-left: 5%;
+	width: 300px;
+	height:300px;
+	position: absolute;
+	background-image: url(imagenes/circulo1.png);
+	background-size: cover;
+}
+
+.circulo2 {
+	animation-name: circulo2;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	margin-top: 30%;
+	margin-left: 1%;
+	width: 200px;
+	height:200px;
+	position: absolute;
+	background-image: url(imagenes/circulo1.png);
+	background-size: cover;
+}
+
+.circulo3 {
+	animation-name: circulo3;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	margin-top: 30%;
+	margin-left:74%;
+	width: 300px;
+	height:300px;
+	position: absolute;
+	background-image: url(imagenes/circulo1.png);
+	background-size: cover;
+}
+.circulo4 {
+	animation-name: circulo4;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	margin-top: 10%;
+	margin-left:80%;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	background-image: url(imagenes/circulo1.png);
+	background-size: cover;
+}
+
+@keyframes circulo1 {
+	0% {
+		transform: rotate(45deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes circulo2 {
+	0% {
+		transform: rotate(45deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
+
+@keyframes circulo3 {
+	0% {
+		transform: rotate(45deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
+@keyframes circulo4 {
+	0% {
+		transform: rotate(45deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}*/
+@media screen and (max-width: 500px) {
+  .circulo1, .circulo2, .circulo3, .circulo4 {
+    width: 0;
+    height: 0; }
+  .inicio {
+    z-index: 10;
+    width: 100%;
+    margin-top: 120px;
+    padding: 10px;
+    position: absolute; }
+    .inicio .titulo {
+      font-size: 80px; }
+    .inicio p {
+      font-size: 14px; }
+    .inicio .boton {
+      color: #68960e;
+      height: 50px;
+      width: 100px;
+      background-color: white; }
+      .inicio .boton a {
+        color: #68960e;
+        font-weight: bold;
+        margin: auto;
+        font-weight: bold;
+        border: 1px solid #68960e !important;
+        font-size: 8px;
+        padding: 6px;
+        text-decoration: none;
+        justify-content: center;
+        display: flex; }
+  .backgroundInicio {
+    background-image: url(imagenes/portadadefinitivaMOVIL.png);
+    background-size: cover;
+    background-attachment: fixed; } }
+
+.backgroundNosotros {
+  background-image: url(imagenes/segundaPortada1.png);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.tituloContenidoNosotros {
+  color: black;
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 7%;
+  align-content: center; }
+  .tituloContenidoNosotros h1 {
+    width: 100%;
+    font-size: 70px; }
+  .tituloContenidoNosotros p {
+    font-size: 20px;
+    width: 40%;
+    margin: auto;
+    color: #999999;
+    font-weight: bold; }
+
+@media screen and (max-width: 500px) {
+  .tituloContenidoNosotros h1 {
+    font-size: 30px;
+    margin-top: 150px; }
+  .tituloContenidoNosotros p {
+    font-size: 10px; } }
+
+.tituloContenidoPedidos h1 {
+  color: black;
+  font-size: 70px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10%;
+  position: absolute;
+  justify-content: space-around; }
+
+.tiposAguacates {
+  display: inline-flex;
+  width: 100%;
+  color: black;
+  margin-top: 20%;
+  margin-bottom: 200px;
+  height: 700px;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .tiposAguacates .primerAguacate {
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    padding: -5px;
+    flex-grow: 1;
+    box-shadow: 0 0 20px #a8a8a8;
+    background-color: white; }
+    .tiposAguacates .primerAguacate h3 {
+      background-color: white; }
+
+.backgroundPedidos {
+  background-image: url(imagenes/pedidos.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: static; }
+
+@media screen and (max-width: 500px) {
+  .tituloContenidoPedidos h1 {
+    font-size: 30px;
+    margin-top: 20%;
+    margin-bottom: 3%;
+    background-color: white; }
+  .primerAguacate {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -80px !important;
+    margin-top: 27%;
+    width: 300px !important;
+    height: 250px !important;
+    flex-grow: 1;
+    font-size: 15px; }
+    .primerAguacate h3 {
+      text-align: center;
+      background-color: white; }
+    .primerAguacate h4 {
+      text-align: center;
+      background-color: wheat; } }
+
+.tituloContenidoRecetas {
+  z-index: 10;
+  width: 100%;
+  margin-top: 7%;
+  position: absolute;
+  padding-right: 32px 0;
+  text-align: center; }
+  .tituloContenidoRecetas h1 {
+    color: black;
+    font-size: 70px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; }
+
+.container-recetas {
+  flex-wrap: wrap;
+  display: inline-flex;
+  margin: auto;
+  padding: 100px; }
+  .container-recetas .recetario {
+    border: 1px solid #cfcfcf;
+    box-shadow: 0 0 20px #a8a8a8;
+    margin: 40px;
+    padding: 20px 20px 20px;
+    min-width: 500px;
+    min-height: 600px;
+    display: inline-flex;
+    text-align: center;
+    background-color: white;
+    overflow: hidden; }
+    .container-recetas .recetario .recetaSi h3 {
+      color: black;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 100%;
+      font-size: 40px;
+      text-align: center; }
+    .container-recetas .recetario .recetaSi p {
+      color: black;
+      margin: auto;
+      width: 200px;
+      font-size: 20px;
+      text-align: center; }
+
+.backgroundRecetas {
+  background-image: url(imagenes/pedidos.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: static; }
+
+@media screen and (max-width: 500px) {
+  .tituloContenidoRecetas h1 {
+    font-size: 30px;
+    margin-top: 50px; }
+  .tituloContenidoRecetas .container-recetas {
+    padding: 0%; }
+  .tituloContenidoRecetas .recetario {
+    width: 100%;
+    height: 600px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -80px !important;
+    width: 300px !important;
+    height: 250px !important;
+    flex-grow: 1;
+    font-size: 15px; }
+    .tituloContenidoRecetas .recetario h3 {
+      text-align: center;
+      background-color: white; }
+  .tituloContenidoRecetas .recetaSi {
+    width: 300px !important;
+    height: 600px !important; }
+    .tituloContenidoRecetas .recetaSi h3 {
+      margin-top: 2%;
+      font-size: 20px; }
+    .tituloContenidoRecetas .recetaSi p {
+      margin-top: 2%;
+      font-size: 15px; } }
+
+.backgroundContacto {
+  background-image: url(imagenes/portadaContacto.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: static; }
+
+.tituloContenido {
+  color: black;
+  z-index: 10;
+  width: 100%;
+  margin-top: 7%;
+  position: absolute;
+  text-align: center; }
+  .tituloContenido h1 {
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    width: 100%; }
+
+@media screen and (max-width: 500px) {
+  .tituloContenido h1 {
+    font-size: 60px; } }
+
+.grid-contacto {
+  padding: 40px;
+  margin-top: 120px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 500px);
+  grid-template-areas: "contacto1 contacto1 contacto1 contacto1" "contacto2 contacto2 contacto3 contacto3" "contacto4 contacto4 contacto4 contacto4"; }
+
+.grid-contacto .contacto1 {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: block;
+  grid-area: contacto1;
+  background: white; }
+  .grid-contacto .contacto1 label {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%; }
+    .grid-contacto .contacto1 label input {
+      border: 0;
+      outline: 0;
+      padding: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      appearance: none;
+      border: 1px solid #cfcfcf; }
+    .grid-contacto .contacto1 label textarea {
+      outline: 0;
+      padding: 16px;
+      margin-top: -12px;
+      margin-right: 8px;
+      appearance: none;
+      border-color: #cfcfcf;
+      resize: none;
+      width: 211px;
+      height: 53px; }
+
+.grid-contacto button {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 200px;
+  background-color: black;
+  border-radius: 7px;
+  text-align: center;
+  padding-top: 13px;
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+  transition: all 0.2s ease; }
+  .grid-contacto button:hover {
+    background-color: #68960e;
+    box-shadow: 0 0 20px #a8a8a8; }
+
+.contacto2 {
+  grid-area: contacto2;
+  background-color: white;
+  padding: 75px;
+  border: 1px solid black; }
+  .contacto2 h3 {
+    padding: 20px; }
+
+.contacto3 {
+  border: 1px solid black;
+  grid-area: contacto3;
+  background-color: white;
+  padding: 80px; }
+  .contacto3 h3 {
+    padding: 20px; }
+
+.contacto4 {
+  border: 1px solid black;
+  grid-area: contacto4;
+  background-color: white;
+  padding: 80px; }
+  .contacto4 h3 {
+    padding: 20px; }
+
+@media screen and (max-width: 500px) {
+  .tituloContenido h1 {
+    font-size: 30px;
+    margin-top: 50px; }
+  .grid-contacto {
+    padding: 40px;
+    margin-top: -17px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas: "contacto1 contacto1" "contacto2 contacto2" "contacto3 contacto3" "contacto4 contacto4"; }
+  .contacto1 {
+    grid-area: contacto1;
+    display: block;
+    padding: 3%; }
+    .contacto1 label {
+      display: block;
+      margin-bottom: 0px !important;
+      width: 100%; }
+      .contacto1 label textarea {
+        outline: 0;
+        padding: 5px;
+        margin-top: 7px !important;
+        margin-right: -2px;
+        appearance: none;
+        border-color: #cfcfcf;
+        resize: none;
+        width: 90px;
+        height: 50px; }
+    .contacto1 button {
+      border-radius: 5px;
+      margin-top: 4px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 40px;
+      width: 150px;
+      background-color: black;
+      border-radius: 7px;
+      text-align: center;
+      padding-top: 5px;
+      color: white;
+      font-weight: bold;
+      transition: all 0.2s ease; }
+      .contacto1 button:hover {
+        background-color: #68960e;
+        box-shadow: 0 0 20px #a8a8a8; }
+      .contacto1 button .contacto2 {
+        padding: 30px;
+        grid-area: contacto2;
+        background-color: white; }
+        .contacto1 button .contacto2 h3 {
+          font-size: 15px; }
+      .contacto1 button .contacto3 {
+        grid-area: contacto3;
+        background-color: white; }
+      .contacto1 button .contacto4 {
+        grid-area: contacto4;
+        background-color: white; } }
+
+footer {
+  display: inline-flex;
+  position: fixed;
+  bottom: 10px;
+  right: 20px; }
+  footer h4 {
+    margin-left: 25px; }
+
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 10px; } }
